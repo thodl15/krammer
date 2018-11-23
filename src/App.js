@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NoteFeedPres from './components/NoteFeedPres';
 
 
 class App extends Component {
@@ -6,6 +7,7 @@ class App extends Component {
         return (
             <div>
                 Bottom Text
+                <NoteFeedPres/>
             </div>
         )
     }
