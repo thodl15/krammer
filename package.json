@@ -1,0 +1,27 @@
+{
+  "name": "krammer",
+  "version": "0.1.0",
+  "description": "A lightweight note-taking application written using React/Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thodl15/krammer.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "notes"
+  ],
+  "author": "David Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thodl15/krammer/issues"
+  },
+  "homepage": "https://github.com/thodl15/krammer#readme",
+  "dependencies": {
+    "react-scripts": "^2.1.1"
+  }
+}
