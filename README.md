@@ -2,7 +2,7 @@
 A lightweight note taking application written using React/Redux
 
 # Goal
-Make a simple note-taking applicatino using React.js that allows tag inclusion via hashtags.
+Make a simple note-taking application using React.js that allows tag inclusion via hashtags.
 
 # Design
 Based on some other designs that exist out in the wild, it will be a vertical display of all entries, sorted by time of creation.
