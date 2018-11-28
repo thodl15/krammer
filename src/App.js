@@ -5,11 +5,12 @@ import TestForm from './components/TestForm';
 import './stylesheets/App.css';
 
 
+
 class App extends Component {
     render() {
         return (
             <div id={"app"}>
-                <NoteFeed className={"mainFeed"}/>
+                <NoteFeed/>
                 {/* <TestForm/> */}
             </div>
         )
