@@ -23,12 +23,30 @@ class NoteFeedCont extends React.Component {
         );
     }
 
-    
+    convertFeedToNodes(feed) {
+        var output = [];
+        feed.forEach(element => {
+            output.push(
+                <div
+                    key = {feed.indexOf(element)}
+                    className = { "feedItem" }
+                >
+                    {/* <div className = {"feedText"}>
+                        {element.about}
+                    </div> */}
+                    {element.about}
+                </div>
+            )
+        });
+        console.log(feed);
+        console.log(output);
+        return output;
+    }
 
     render() {
         return (
             <PresComp
-                feed = { this.state.feed }
+                feed = { this.convertFeedToNodes(this.state.feed) }
             />
         )
     }

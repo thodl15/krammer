@@ -1,5 +1,6 @@
-import React from 'react'
-import { List } from 'semantic-ui-react'
+import React from 'react';
+
+import '../stylesheets/Feed.css';
 
 // const events = [
 //   {
@@ -52,54 +53,58 @@ const FeedExampleEventsProp = (props) =>
     // })} 
     
     // />
-
-    <List className={"mainFeed"}>
-        <List.Item>Sample One</List.Item>
-        <List.Item>Sample Two</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample One</List.Item>
-        <List.Item>Sample Two</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample One</List.Item>
-        <List.Item>Sample Two</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample One</List.Item>
-        <List.Item>Sample Two</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample One</List.Item>
-        <List.Item>Sample Two</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
-        <List.Item>Sample Three</List.Item>
+    <div
+        className = { "feedContainer" }
+    >
+        {props.feed}
+    </div>
+    // <List className={"mainFeed"}>
+    //     <List.Item>Sample One</List.Item>
+    //     <List.Item>Sample Two</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample One</List.Item>
+    //     <List.Item>Sample Two</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample One</List.Item>
+    //     <List.Item>Sample Two</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample One</List.Item>
+    //     <List.Item>Sample Two</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample One</List.Item>
+    //     <List.Item>Sample Two</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
+    //     <List.Item>Sample Three</List.Item>
         
-    </List>
+    // </List>
 
 export default FeedExampleEventsProp
