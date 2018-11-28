@@ -1,4 +1,5 @@
 import React from 'react';
+import TestForm from './TestForm';
 
 import '../stylesheets/Feed.css';
 
@@ -53,11 +54,16 @@ const FeedExampleEventsProp = (props) =>
     // })} 
     
     // />
-    <div
-        className = { "feedContainer" }
-    >
-        {props.feed}
+    <div className = { "feedContainer" }>
+        <TestForm/>
+        <div
+            className = { "feedItemContainer" }
+        >
+            {props.feed}
+        </div>
+        
     </div>
+    
     // <List className={"mainFeed"}>
     //     <List.Item>Sample One</List.Item>
     //     <List.Item>Sample Two</List.Item>
