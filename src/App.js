@@ -10,7 +10,10 @@ class App extends Component {
     render() {
         return (
             <div id={"app"}>
-                <NoteFeed/>
+                <div className={"visualWrapper"}>
+                    <NoteFeed/>
+                </div>
+                
                 {/* <TestForm/> */}
             </div>
         )
