@@ -7,6 +7,15 @@
     border-bottom: 1px solid black;
 }
 
+.feedItem:hover {
+    background-color: rgb(210, 218, 224);
+    /* 
+        Enable this once I integrate the
+        in-line editing functionality.
+    */
+    /* cursor: pointer; */
+}
+
 .feedContainer {
     height: 100%;
     border-left: 1px solid black;
