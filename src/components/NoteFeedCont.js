@@ -9,13 +9,15 @@ class NoteFeedCont extends React.Component {
         this.state = {
             feed: []
         }
+
+        this.updateLocalFeedList = this.updateLocalFeedList.bind(this);
     }
 
     componentDidMount() {
         fetch("http://localhost:4000/notes").then(
             res => res.json()
         ).then(
-            data => this.setState((state,props) => {
+            data => this.setState((state, props) => {
                 return {
                     feed: data
                 }
@@ -23,30 +25,41 @@ class NoteFeedCont extends React.Component {
         );
     }
 
+    componentDidUpdate() {
+        var feedList = document.getElementById("feedItemContainer");
+        feedList.scrollTop = feedList.children[0].scrollTop;
+    }
+
     convertFeedToNodes(feed) {
         var output = [];
         feed.forEach(element => {
             output.push(
                 <div
-                    key = {feed.indexOf(element)}
+                    key = { feed.indexOf(element) }
+
                     className = { "feedItem" }
                 >
-                    {/* <div className = {"feedText"}>
-                        {element.about}
-                    </div> */}
-                    {element.about}
+                    { element.about }
                 </div>
             )
         });
-        console.log(feed);
-        console.log(output);
         return output;
+    }
+
+    updateLocalFeedList(entry) {
+        this.setState((state, props) => {
+            state.feed.push(entry);
+            return {
+                feed: state.feed
+            }
+        });
     }
 
     render() {
         return (
             <PresComp
-                feed = { this.convertFeedToNodes(this.state.feed) }
+                feed = {this.convertFeedToNodes(this.state.feed)}
+                updateFeed = {this.updateLocalFeedList}
             />
         )
     }
