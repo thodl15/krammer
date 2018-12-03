@@ -14,14 +14,18 @@ const NoteInput = (props) => (
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ about: formData })
-                }).then(
-                    response => {
-                        console.log(response.json());
-                        props.updateFeed({ about: formData })
-                        setSubmitting(false);
-                    }
-                );
+                    body: JSON.stringify(
+                        { 
+                            about: formData,
+                            extra: "Extra data"
+                        }
+                    )
+                }).then( res => res.json()
+                ).then ( data => {
+                    console.log(data);
+                    props.updateFeed({ about: data.about });
+                    setSubmitting(false);
+                });
                 resetForm();
             }}
         >
