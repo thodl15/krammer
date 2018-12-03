@@ -10,7 +10,7 @@ class App extends Component {
         return (
             <div id={"app"}>
                 <div className={"visualWrapper"}>
-                    <NoteFeed/>
+                    <NoteFeed />
                 </div>
             </div>
         )
