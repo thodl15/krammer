@@ -1,5 +1,5 @@
 # krammer
-A lightweight note taking application written using React/Redux
+A lightweight note taking application written using React.
 
 # Goal
 Make a simple note-taking application using React.js that allows tag inclusion via hashtags.
