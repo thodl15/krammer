@@ -17,3 +17,6 @@
 .env.production.local
 
 npm-debug.log*
+
+# Sample database for local dev
+db.json
